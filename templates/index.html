@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Spark University</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="{{url_for('static',filename='css/open-iconic-bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}">
+
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/owl.theme.default.min.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css')}}">
+
+	<link rel="stylesheet" href="{{url_for('static',filename='css/aos.css')}}">
+
+	<link rel="stylesheet" href="{{url_for('static',filename='css/ionicons.min.css')}}">
+
+	<link rel="stylesheet" href="{{url_for('static',filename='css/flaticon.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/icomoon.css')}}">
+	<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<style>
+	.center {
+		text-align: center;
+	}
+</style>
+
+<body>
+	<div class="bg-top navbar-light">
+		<div class="container">
+			<div class="row no-gutters d-flex align-items-center align-items-stretch">
+				<div class="col-md-4 d-flex align-items-center py-4">
+					<img style="border-radius: 50px;" class="mr-2" src="{{url_for('static',filename='./images/universitylogo3.jpg')}}" width="80" alt="">
+					<a class="navbar-brand" href="{{url_for('index')}}">Spark<span>University</span></a>
+				</div>
+				<div class="col-lg-8 d-block">
+					<div class="row d-flex">
+						<div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+							<div class="icon d-flex justify-content-center align-items-center"><span
+									class="icon-paper-plane"></span></div>
+							<div class="text">
+								<span>Email</span>
+								<span>sparkuniversity@email.com</span>
+							</div>
+						</div>
+						<div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+							<div class="icon d-flex justify-content-center align-items-center"><span
+									class="icon-phone2"></span></div>
+							<div class="text">
+								<span>Call</span>
+								<span>Call Us: +91 8989676745</span>
+							</div>
+						</div>
+						<div class="col-md topper d-flex align-items-center justify-content-end">
+							<p class="mb-0">
+								<a href="{{url_for('login')}}"
+									class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+									<span>Login</span>
+								</a>
+							</p>
+						</div>
+						<!-- <div class="col-md topper d-flex align-items-center justify-content-end">
+					    	<p class="mb-0">
+					    		<a href="#" class="btn py-2 px-3 btn-primary d-flex align-items-center justify-content-center">
+					    			<span>Log in</span>
+					    		</a>
+					    	</p>
+					    </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container d-flex align-items-center px-4">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<form action="#" class="searchform order-lg-last">
+				<div class="form-group d-flex">
+					<!-- <input type="text" class="form-control pl-3" placeholder="Search"> -->
+					<!-- <button type="submit" placeholder="" class="form-control search"><span class="ion-ios-search"></span></button> -->
+				</div>
+			</form>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a href="{{url_for('index')}}" class="nav-link pl-0">Home</a></li>
+					<li class="nav-item"><a href="{{url_for('about')}}" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="{{url_for('courses')}}" class="nav-link">Student Admission</a></li>
+					<li class="nav-item"><a href="{{url_for('staff')}}" class="nav-link">Staff</a></li>
+					<li class="nav-item"><a href="{{url_for('blog')}}" class="nav-link">Events</a></li>
+					<li class="nav-item"><a href="{{url_for('contact_new')}}" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<section class="home-slider owl-carousel">
+		<div class="slider-item" style="background-image: url({{ url_for('static', filename='images/cam.jpeg') }})">
+    <div class="overlay"></div>)">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row no-gutters slider-text align-items-center justify-content-start"
+					data-scrollax-parent="true">
+					<div class="col-md-6 ftco-animate">
+						<h1 class="mb-4">Spark University. </h1>
+						<p>University offers you the chance to increase your education, determine your future, and
+							improve your life choices and opportunities.</p>
+						<!-- <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
+      	<div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
+          <div class="col-md-6 ftco-animate">
+            <h1 class="mb-4">University, College School Education</h1>
+            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+             <p><a href="#" class="btn btn-primary px-4 py-3 mt-3">Contact Us</a></p> -->
+		</div>
+		</div>
+		</div>
+		</div>
+	</section>
+
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2">Have a Question?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">198 West 21th Street,
+										Suite 721 New York NY 10016</span></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+91
+											8989676745</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">sparkuniversity@email.com</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2">Upcoming Events!</h2>
+						<div class="block-21 mb-4 d-flex">
+							<a class="blog-img mr-4" style="background-image: url({{ url_for('static', filename='images/dataaa.avif') }})">
+    <div class="overlay"></div>"></a>
+							<div class="text">
+								<h3 class="heading"><a href="blog.html">Data Dive</a></h3>
+								<div class="meta">
+									<div><a href="#"><span class="icon-calendar"></span> Feburary 12, 2023</a></div>
+									<div><a href="#"><span class="icon-person"></span> Admin</a></div>
+									<div><a href="#"><span class="icon-chat"></span> 29</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="block-21 mb-5 d-flex">
+							<a class="blog-img mr-4" style="background-image: url({{ url_for('static', filename='images/music.jpg') }})">
+    <div class="overlay"></div>"></a>
+							<div class="text">
+								<h3 class="heading"><a href="{{url_for('blog')}}">Ultra Music Festival</a></h3>
+								<div class="meta">
+									<div><a href="#"><span class="icon-calendar"></span> Feburary 23, 2023</a></div>
+									<div><a href="#"><span class="icon-person"></span> Admin</a></div>
+									<div><a href="#"><span class="icon-chat"></span> 19</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5 ml-md-4">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="{{url_for('index')}}"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+							<li><a href="{{url_for('about')}}"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a>
+							</li>
+							<li><a href="{{url_for('courses')}}"><span class="ion-ios-arrow-round-forward mr-2"></span>Student
+									Admission</a></li>
+							<li><a href="{{url_for('staff')}}"><span class="ion-ios-arrow-round-forward mr-2"></span>Staff</a>
+							</li>
+							<li><a href="{{url_for('blog')}}"><span class="ion-ios-arrow-round-forward mr-2"></span>Events</a>
+							</li>
+							<li><a href="{{url_for('contact_new')}}"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3">
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2">Contact Us!</h2>
+						<form action="{{url_for('contact_new')}}" class="subscribe-form">
+							<div class="form-group">
+								<a href="{{url_for('contact_new')}}"><input type="submit" value="Redirect"
+										class="form-control submit px-3"></a>
+							</div>
+						</form>
+					</div>
+					<div class="ftco-footer-widget mb-5">
+						<h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+							<li class="ftco-animate"><a href="https://twitter.com/?lang=en"><span
+										class="icon-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/"><span
+										class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/?__coig_restricted=1"><span
+										class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved |
+						@sparkuniversity <i class="icon-heart" aria-hidden="true"></i>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+	<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery-migrate-3.0.1.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.easing.1.3.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.waypoints.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.stellar.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/aos.js')}}"></script>
+	<script src="{{url_for('static',filename='js/jquery.animateNumber.min.js')}}"></script>
+	<script src="{{url_for('static',filename='js/scrollax.min.js')}}"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="{{url_for('static',filename='js/google-map.js')}}"></script>
+	<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+</body>
+
+</html>

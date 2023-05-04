@@ -1,0 +1,18 @@
+<form action="{{url_for('charge')}}" method="POST">
+  <script
+      src="https://checkout.razorpay.com/v1/checkout.js"
+      data-key="{{ razorpay_order['key'] }}"
+      data-amount="{{ razorpay_order['amount'] }}"
+      data-currency="{{ razorpay_order['currency'] }}"
+      data-order_id="{{ razorpay_order['id'] }}"
+      data-buttontext="Pay with Razorpay"
+      data-name="Your Company Name"
+      data-description="Payment"
+      data-image="https://your-company-logo.png"
+      data-prefill.name="John Doe"
+      data-prefill.email="johndoe@example.com"
+      data-theme.color="#F37254">
+  </script>
+  <input type="hidden" name="razorpay_payment_id" id="razorpay_payment_id">
+  <button type="submit">Pay Now</button>
+</form>
